@@ -27,7 +27,7 @@ img {
 
 /* UTILY */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 ul {
@@ -144,6 +144,10 @@ ul {
     gap: 15px;
 }
 
+.list-header-top.flex a:hover {
+    text-decoration: underline;
+}
+
 /* HEADER BOTTOM */
 .header-bottom {
     text-align: center;
@@ -244,6 +248,7 @@ ul {
     padding-bottom: 80px;
 }
 
+
 .section-bottom h2 {
     font-size: var(--size-large);
     padding-top: var(--space-padding-large);
@@ -266,59 +271,80 @@ ul {
     margin-bottom: 25px;
 }
 
-/* footer */
-/* footer top */
+/* FOOTER */
+
+/* FOOTER TOP */
 footer {
     background-color: #23272A;
-    padding-top: 7px;
+    padding-top: 55px;
+    color: rgb(255, 255, 255);
 }
 
 .footer-top.flex {
-    height: 400px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #5F72B2;
+}
+
+.footer-top.flex h2 {
+    color: #5F72B2;
     margin-bottom: 20px;
-    border: 1px dashed black;
 }
 
-.col-w35 {
-    width: 35%;
-    /* debug */
-    background-color: #F08080;
-    border: 1px dashed black;
+.col-w40 {
+    width: 40%;   
 }
 
-.col-w65 {
-    width: 65%;
-    /* debug */
-    background-color: #20B2AA;
-    border: 1px dashed black;
+.col-w60 {
+    width: 60%;
+}
+
+.col-w60.flex li {
+    line-height: 1.8;
+}
+
+.col-w60.flex li:first-child {
+    color: #5F72B2;
+    font-weight: 600;
 }
 
 .col-w25 {
     width: 25%;
-    border: 1px dashed white;
 }
 
-/* footer bottom */
-.border-divisore {
-    border: 1px solid gray;
-    margin-bottom: 15px;
+.col-w25 a:hover {
+    text-decoration: underline;
+}
+
+.flag-italy {
+    height: 16px;
+    vertical-align: middle;
+}
+
+.col-w40 span {
+    vertical-align: middle;
+}
+
+.icon-social {
+    margin-top: 20px;
+}
+
+.icon-social i:hover {
+    scale: 1.4;
+}
+
+.icon-social i {
+    margin-right: 20px;
 }
 
 
+/* FOOTER BOTTOM */
 .footer-bottom.flex {
     justify-content: space-between;
-    height: 40px;
-    padding: 10px 0;
-    background-color: #7FFFD4;
+    height: 90px;
 }
 
 
-.footer-bottom.flex p {
-    width: 60px;
-    text-align: center;
-    background-color: #FFB6C1;
-    border: 1px dashed black;
-}
 
 
 
