@@ -1,0 +1,229 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utily */
+.conteiner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+/* common */
+.btn-small {
+    display: inline-block;
+    text-align: center;
+    height: 31px;
+    width: 72px;
+    line-height: 31px;
+    border-radius: 15px;
+    font-size: 0.8rem;  
+}
+
+.bg-white {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);   
+}
+
+/* header */
+/* header top */
+header {
+    padding-top: 15px;
+    background-color: rgb(37, 94, 233); 
+}
+
+.logo-discord {
+    height: 27px;
+}
+
+.header-top.flex {
+    height: 30px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.col-20 {
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 3px;
+}
+
+.col-60 {
+    width: 60%;
+    height: 30px;
+    line-height: 30px;  
+}
+
+.header-top.flex p:last-child {
+    text-align: right;
+}
+
+/* lista navigazione */
+ul {
+    list-style: none;
+}
+
+.list-header-top.flex {
+    justify-content: center;
+    gap: 15px;
+}
+
+/* header bottom */
+.header-bottom.flex {
+    justify-content: center;
+    align-items: start;
+    height: 365px;
+    padding-top: 32px;
+    /* debug */
+    background-color: #00008B;
+    
+}
+
+.content-header-bottom {
+    min-height: 300px;
+    width: 50%;
+    /* debug */
+    background-color: #EE82EE;
+    border: 1px dashed black;
+}
+
+/* main */
+.main {
+    padding-top: 15px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+/* section primary */
+.stn-primary.flex {
+    min-height: 300px;
+    border: 1px dashed black;
+}
+
+.col-large {
+    width: 60%;
+    /* debug */
+    background-color: #1E90FF;
+    border: 1px dashed black;
+}
+
+.col-small {
+    width: 40%;
+    /* debug */
+    border: 1px dashed black;
+    background-color: #FFC0CB;
+}
+
+
+/* section secondary */
+.bg-stn-secondary {
+    height: 360px;
+    padding-top: 30px;
+    background-color: #D3D3D3;
+    margin-bottom: 30px;
+}
+
+.stn-secondary.flex {
+    flex-direction: row-reverse;
+    min-height: 300px;
+    border: 1px dashed black;
+}
+
+
+/* section tertiary */
+.stn-tertiary.flex {
+    min-height: 300px;
+    border: 1px dashed black;
+}
+
+.bg-content-main {
+    height: 550px;
+    padding-top: 30px;
+    background-color: #D3D3D3;
+}
+/* fine section tertiary */
+
+
+.content-main {
+    min-height: 490px;
+    width: 100%;
+    /* debug */
+    background-color: #228B22;
+    border: 1px dashed black;
+}
+
+/* footer */
+/* footer top */
+footer {
+    background-color: #23272A;
+    padding-top: 7px;
+}
+
+.footer-top.flex {
+    height: 400px;
+    margin-bottom: 20px;
+    border: 1px dashed black;
+}
+
+.col-w35 {
+    width: 35%;
+    /* debug */
+    background-color: #F08080;
+    border: 1px dashed black;
+}
+
+.col-w65 {
+    width: 65%;
+    /* debug */
+    background-color: #20B2AA;
+    border: 1px dashed black;
+}
+
+.col-w25 {
+    width: 25%;
+    border: 1px dashed white;
+}
+
+/* footer bottom */
+.border-divisore {
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+
+.footer-bottom.flex {
+    justify-content: space-between;
+    height: 40px;
+    padding: 10px 0;
+    background-color: #7FFFD4;
+}
+
+
+.footer-bottom.flex p {
+    width: 60px;
+    text-align: center;
+    background-color: #FFB6C1;
+    border: 1px dashed black;
+}
+
+
+
