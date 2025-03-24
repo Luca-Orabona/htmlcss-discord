@@ -49,13 +49,25 @@ p {
 
 
 /* COMMON */
-.conteiner {
+.container {
     width: 70%;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
+}
+
+.bg-wave {
+    background-image: url(../img/wave.svg);
+    height: 40px;
+    margin-top: var(--space-margin-large);
+}
+
+.bg-wave-rotate {
+    background-image: url(../img/wave.svg);
+    height: 40px;
+    transform: rotate(180deg);
 }
 
 
@@ -115,15 +127,16 @@ header {
     background-color: rgb(37, 94, 233); 
 }
 
-.logo-discord {
-    height: 27px;
-}
 
-.header-top.flex {
+.header-top {
     height: 40px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+}
+
+.logo-discord {
+    height: 27px;
 }
 
 .col-20 {
@@ -135,10 +148,6 @@ header {
 }
 
 /* NAVIGATION */
-ul {
-    list-style: none;
-}
-
 .list-header-top.flex {
     justify-content: center;
     gap: 15px;
@@ -167,7 +176,7 @@ ul {
     margin-bottom: 30px;
 }
 
-.header-bottom  p {
+.header-bottom p {
     margin-bottom: 25px;
 }
 
@@ -212,11 +221,12 @@ ul {
 }
 
 
+
 /* SECTION MIDDLE 1 */
 .section-middle-1.flex {
     flex-direction: row-reverse;
-    margin-top: var(--space-margin-large);
 }
+
 
 .section-middle-1.flex .col-large {
     text-align: right;
@@ -244,7 +254,6 @@ ul {
 /* SECTION BOTTOM */
 .section-bottom {
     text-align: center;
-    margin-top: var(--space-margin-large);
     padding-bottom: 80px;
 }
 
