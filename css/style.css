@@ -5,11 +5,50 @@
     box-sizing: border-box;
 }
 
-/* utily */
-body {
-    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+img {
+    max-width: 100%;
 }
 
+
+/* CUSTOM PROPERTIES */
+:root {
+
+    /* margin */
+    --space-margin-large: 30px;
+    --space-margin-small: 20px;
+
+    /* padding */
+    --space-padding-large: 35px;
+
+    /* font size */
+    --size-large: 2.5rem;
+}
+
+
+/* UTILY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.flex-end {
+    justify-content: end;
+}
+
+
+/* COMMON */
 .conteiner {
     width: 70%;
     margin: 0 auto;
@@ -19,16 +58,8 @@ body {
     display: flex;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
-.flex-end {
-    justify-content: flex-end;
-}
-
-/* common */
+/* BUTTON */
 .btn-small {
     display: inline-block;
     text-align: center;
@@ -49,9 +80,14 @@ a {
     font-size: 0.9rem;
 }
 
-.bg-black {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(0, 0, 0);   
+.btn-small:hover,.btn-large:hover {
+    scale: 1.1;
+}
+
+
+/* BACKGROUND */
+.bg-gray {
+    background-color: #ebebeb;
 }
 
 .bg-white {
@@ -60,8 +96,19 @@ a {
     border: 1px solid rgb(255, 255, 255);   
 }
 
-/* header */
-/* header top */
+.bg-black {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);   
+}
+
+.bg-violet {
+    color: rgb(255, 255, 255);
+    background-color: #8EA1E1;
+    border: 1px solid #8EA1E1;   
+}
+
+/* HEADER */
+/* HEADER TOP */
 header {
     color: white;
     padding-top: 15px;
@@ -73,25 +120,21 @@ header {
 }
 
 .header-top.flex {
-    height: 30px;
+    height: 40px;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
 }
 
 .col-20 {
     width: 20%;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 3px;
 }
 
 .col-60 {
     width: 60%;
-    height: 30px;
-    line-height: 30px;  
 }
 
-/* lista navigazione */
+/* NAVIGATION */
 ul {
     list-style: none;
 }
@@ -101,7 +144,7 @@ ul {
     gap: 15px;
 }
 
-/* header bottom */
+/* HEADER BOTTOM */
 .header-bottom {
     text-align: center;
     height: 497px;
@@ -128,71 +171,99 @@ ul {
     margin-left: 13px;
 }
 
-/* main */
+/* MAIN */
 .main {
     padding-top: 15px;
 }
 
-main section {
-    margin-bottom: 30px;
+.main img {
+    width: 80%;
 }
 
-/* section primary */
-.stn-primary.flex {
-    min-height: 300px;
-    border: 1px dashed black;
+/* altra soluzione per stilizzare gli h2 nel main oltre alle custom properties */
+/* .main h2 {
+    font-size: 2.5rem;
+    padding-top: 35px;
+    margin-bottom: 20px;
+} */
+
+
+/* SECTION TOP */
+.section-top.flex {
+    margin-top: var(--space-margin-large);
+}
+
+.section-top.flex h2 {
+    font-size: var(--size-large);
+    padding-top: var(--space-padding-large);
+    margin-bottom: var(--space-margin-small);
 }
 
 .col-large {
-    width: 60%;
-    /* debug */
-    background-color: #1E90FF;
-    border: 1px dashed black;
+    width: 70%;
 }
 
 .col-small {
-    width: 40%;
-    /* debug */
-    border: 1px dashed black;
-    background-color: #FFC0CB;
+    width: 30%;
 }
 
 
-/* section secondary */
-.bg-stn-secondary {
-    height: 360px;
-    padding-top: 30px;
-    background-color: #D3D3D3;
-    margin-bottom: 30px;
-}
-
-.stn-secondary.flex {
+/* SECTION MIDDLE 1 */
+.section-middle-1.flex {
     flex-direction: row-reverse;
-    min-height: 300px;
-    border: 1px dashed black;
+    margin-top: var(--space-margin-large);
+}
+
+.section-middle-1.flex .col-large {
+    text-align: right;
+}
+
+.section-middle-1.flex h2 {
+    font-size: var(--size-large);
+    padding-top: var(--space-padding-large);
+    margin-bottom: var(--space-margin-small);
 }
 
 
-/* section tertiary */
-.stn-tertiary.flex {
-    min-height: 300px;
-    border: 1px dashed black;
+/* SECTION MIDDLE 2 */
+.section-middle-2.flex {
+    margin-top: var(--space-margin-large);
 }
 
-.bg-content-main {
-    height: 550px;
-    padding-top: 30px;
-    background-color: #D3D3D3;
+.section-middle-2.flex h2 {
+    font-size: var(--size-large);
+    padding-top: var(--space-padding-large);
+    margin-bottom: var(--space-margin-small);
 }
-/* fine section tertiary */
 
 
-.content-main {
-    min-height: 490px;
-    width: 100%;
-    /* debug */
-    background-color: #228B22;
-    border: 1px dashed black;
+/* SECTION BOTTOM */
+.section-bottom {
+    text-align: center;
+    margin-top: var(--space-margin-large);
+    padding-bottom: 80px;
+}
+
+.section-bottom h2 {
+    font-size: var(--size-large);
+    padding-top: var(--space-padding-large);
+    margin-bottom: var(--space-margin-small);
+}
+
+.bg-img.flex {
+    justify-content: center;
+}
+
+.bg-img.flex > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 50px;
+    width: 360px;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
 }
 
 /* footer */
